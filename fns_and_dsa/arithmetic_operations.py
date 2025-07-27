@@ -1,15 +1,28 @@
-def perform_operation (num1: float, num2: float, operation:str ):
-    match operation:
-        case "add":
-            return num1 + num2
-        case "subtract":
-            return num1 - num2
-        case "multiply":
-            return num1 * num2
-        case "divide":
-            if num2 == 0:
-                return "Cannot divide by zero"
-            return num1 / num2
+def perform_operation(num1, num2, operation):
+    """
+    Performs a basic arithmetic operation.
+
+    Parameters:
+    - num1 (float): The first number.
+    - num2 (float): The second number.
+    - operation (str): The operation to perform. One of 'add', 'subtract', 'multiply', 'divide'.
+
+    Returns:
+    - float: The result of the operation.
+    - str: Error message for invalid operations or division by zero.
+    """
+    if operation == "add":
+        return num1 + num2
+    elif operation == "subtract":
+        return num1 - num2
+    elif operation == "multiply":
+        return num1 * num2
+    elif operation == "divide":
+        if num2 == 0:
+            return "Cannot divide by zero"
+        return num1 / num2
+    else:
+        return "Invalid operation"
 
 
 from arithmetic_operations import perform_operation
