@@ -1,4 +1,4 @@
-class books:
+class Book:
     def __init__(self, title, author):
         self.title = title
         self.author = author
@@ -48,4 +48,5 @@ class Library:
         if not available:
             print("No books are currently available.")
         for book in available:
+
             print(f"{book.title} by {book.author}")
