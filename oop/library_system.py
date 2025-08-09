@@ -1,4 +1,4 @@
-class Book ():
+class Book:
     def __init__(self, title: str, author: str):
         self.title = title
         self.author = author
@@ -34,4 +34,5 @@ class Library:
 
     def list_books(self):
         for book in self.books:
+
             print(book)
